@@ -1,12 +1,12 @@
-import { ServiceCard, ServicesContainer, CardContainer } from './style'
-import arrowImg from '../../assets/arrow.svg'
-import branchBgImg from '../../assets/branch_bg.png'
-import cardIconImg1 from '../../assets/card_icon_1.svg'
-import cardIconImg2 from '../../assets/card_icon_2.svg'
-import cardIconImg3 from '../../assets/card_icon_3.svg'
-import cardIconImg4 from '../../assets/card_icon_4.svg'
-import cardIconImg5 from '../../assets/card_icon_5.svg'
-import cardIconImg6 from '../../assets/card_icon_6.svg'
+import { ServiceCard, ServicesContainer, CardContainer } from "./style";
+import arrowImg from "../../assets/arrow.svg";
+import branchBgImg from "../../assets/branch_bg.png";
+import cardIconImg1 from "../../assets/card_icon_1.svg";
+import cardIconImg2 from "../../assets/card_icon_2.svg";
+import cardIconImg3 from "../../assets/card_icon_3.svg";
+import cardIconImg4 from "../../assets/card_icon_4.svg";
+import cardIconImg5 from "../../assets/card_icon_5.svg";
+import cardIconImg6 from "../../assets/card_icon_6.svg";
 
 export function Services() {
   return (
@@ -23,6 +23,7 @@ export function Services() {
           <div className="contentContainer">
             <div className="header">
               <img
+                draggable={false}
                 width={40}
                 height={40}
                 src={cardIconImg1}
@@ -37,6 +38,7 @@ export function Services() {
             <p className="casesCount">225 Casos solucionados</p>
           </div>
           <img
+            draggable={false}
             className="arrow"
             src={arrowImg}
             alt="ocultar mostrar conteudo"
@@ -46,6 +48,7 @@ export function Services() {
           <div className="contentContainer">
             <div className="header">
               <img
+                draggable={false}
                 width={40}
                 height={40}
                 src={cardIconImg2}
@@ -60,6 +63,7 @@ export function Services() {
             <p className="casesCount">225 Casos solucionados</p>
           </div>
           <img
+            draggable={false}
             className="arrow"
             src={arrowImg}
             alt="ocultar mostrar conteudo"
@@ -69,6 +73,7 @@ export function Services() {
           <div className="contentContainer">
             <div className="header">
               <img
+                draggable={false}
                 width={40}
                 height={40}
                 src={cardIconImg3}
@@ -83,6 +88,7 @@ export function Services() {
             <p className="casesCount">225 Casos solucionados</p>
           </div>
           <img
+            draggable={false}
             className="arrow"
             src={arrowImg}
             alt="ocultar mostrar conteudo"
@@ -92,6 +98,7 @@ export function Services() {
           <div className="contentContainer">
             <div className="header">
               <img
+                draggable={false}
                 width={40}
                 height={40}
                 src={cardIconImg4}
@@ -106,6 +113,7 @@ export function Services() {
             <p className="casesCount">225 Casos solucionados</p>
           </div>
           <img
+            draggable={false}
             className="arrow"
             src={arrowImg}
             alt="ocultar mostrar conteudo"
@@ -115,6 +123,7 @@ export function Services() {
           <div className="contentContainer">
             <div className="header">
               <img
+                draggable={false}
                 width={40}
                 height={40}
                 src={cardIconImg5}
@@ -129,6 +138,7 @@ export function Services() {
             <p className="casesCount">225 Casos solucionados</p>
           </div>
           <img
+            draggable={false}
             className="arrow"
             src={arrowImg}
             alt="ocultar mostrar conteudo"
@@ -138,6 +148,7 @@ export function Services() {
           <div className="contentContainer">
             <div className="header">
               <img
+                draggable={false}
                 width={40}
                 height={40}
                 src={cardIconImg6}
@@ -152,6 +163,7 @@ export function Services() {
             <p className="casesCount">225 Casos solucionados</p>
           </div>
           <img
+            draggable={false}
             className="arrow"
             src={arrowImg}
             alt="ocultar mostrar conteudo"
@@ -159,7 +171,12 @@ export function Services() {
         </ServiceCard>
       </CardContainer>
 
-      <img className="branchBg" src={branchBgImg} alt="ramo de fundo" />
+      <img
+        draggable={false}
+        className="branchBg"
+        src={branchBgImg}
+        alt="ramo de fundo"
+      />
     </ServicesContainer>
-  )
+  );
 }

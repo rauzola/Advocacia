@@ -1,17 +1,17 @@
-import linkedinImg from '../../assets/in_white.svg'
-import faceImg from '../../assets/face-white.svg'
-import instaImg from '../../assets/insta-white.svg'
-import logoSidebarImg from '../../assets/logo-sidebar.svg'
-import { Sidebar as SidebarContainer } from 'primereact/sidebar'
-import { SidebarButton, SidebarContent } from './style'
-import { useState } from 'react'
-import 'primereact/resources/themes/lara-light-indigo/theme.css' // theme
-import 'primereact/resources/primereact.min.css' // core css
-import 'primeicons/primeicons.css'
-import hambImg from '../../assets/hamb.svg'
+import linkedinImg from "../../assets/in_white.svg";
+import faceImg from "../../assets/face-white.svg";
+import instaImg from "../../assets/insta-white.svg";
+import logoSidebarImg from "../../assets/logo-sidebar.svg";
+import { Sidebar as SidebarContainer } from "primereact/sidebar";
+import { SidebarButton, SidebarContent } from "./style";
+import { useState } from "react";
+import "primereact/resources/themes/lara-light-indigo/theme.css"; // theme
+import "primereact/resources/primereact.min.css"; // core css
+import "primeicons/primeicons.css";
+import hambImg from "../../assets/hamb.svg";
 
 export function Sidebar() {
-  const [visibleLeft, setVisibleLeft] = useState(false)
+  const [visibleLeft, setVisibleLeft] = useState(false);
 
   return (
     <>
@@ -21,7 +21,7 @@ export function Sidebar() {
         alt="mostrar sidebar"
       ></SidebarButton>
       <SidebarContainer
-        style={{ background: 'rgba(97, 52, 203, 1)' }}
+        style={{ background: "rgba(97, 52, 203, 1)" }}
         visible={visibleLeft}
         fullScreen
         onHide={() => setVisibleLeft(false)}
@@ -54,26 +54,48 @@ export function Sidebar() {
                 href="https://www.linkedin.com/in/raul-sigoli-137bb4173/"
                 rel="noreferrer"
               >
-                <img width={40} height={40} src={linkedinImg} alt="linkedin" />
+                <img
+                  draggable={false}
+                  width={40}
+                  height={40}
+                  src={linkedinImg}
+                  alt="linkedin"
+                />
               </a>
               <a
                 target="_blank"
                 href="https://www.facebook.com/raul_sigoli"
                 rel="noreferrer"
               >
-                <img width={40} height={40} src={faceImg} alt="facebook" />
+                <img
+                  draggable={false}
+                  width={40}
+                  height={40}
+                  src={faceImg}
+                  alt="facebook"
+                />
               </a>
               <a
                 target="_blank"
                 href="https://www.instagram.com/raul_sigoli/"
                 rel="noreferrer"
               >
-                <img width={40} height={40} src={instaImg} alt="instagram" />
+                <img
+                  draggable={false}
+                  width={40}
+                  height={40}
+                  src={instaImg}
+                  alt="instagram"
+                />
               </a>
             </nav>
           </nav>
           <footer>
-            <img src={logoSidebarImg} alt="logomarca Antonio" />
+            <img
+              draggable={false}
+              src={logoSidebarImg}
+              alt="logomarca Antonio"
+            />
             <p>
               Empresa de advocacia especializada em resolver problemas
               jurídicos.
@@ -82,5 +104,5 @@ export function Sidebar() {
         </SidebarContent>
       </SidebarContainer>
     </>
-  )
+  );
 }

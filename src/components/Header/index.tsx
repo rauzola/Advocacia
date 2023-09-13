@@ -1,7 +1,7 @@
-import { HeaderContainer, HeaderContent, LogoContainer } from './style'
-import logoSmallImg from '../../assets/logo_small.svg'
-import logoExtendsImg from '../../assets/logo_extends.svg'
-import { SmallInvisibleButton, SmallOutlineButton } from '../Buttons/Buttons'
+import { HeaderContainer, HeaderContent, LogoContainer } from "./style";
+import logoSmallImg from "../../assets/logo_small.svg";
+import logoExtendsImg from "../../assets/logo_extends.svg";
+import { SmallInvisibleButton, SmallOutlineButton } from "../Buttons/Buttons";
 
 export function Header() {
   return (
@@ -9,7 +9,7 @@ export function Header() {
       <HeaderContent>
         <LogoContainer>
           <a href="#home">
-            <img src={logoSmallImg} alt="logomarca Antonio" />
+            <img draggable={false} src={logoSmallImg} alt="logomarca Antonio" />
           </a>
           <a href="#home">
             {/* <img src={logoExtendsImg} alt="Logomarca Antonio" /> */}
@@ -38,5 +38,5 @@ export function Header() {
         </nav>
       </HeaderContent>
     </HeaderContainer>
-  )
+  );
 }

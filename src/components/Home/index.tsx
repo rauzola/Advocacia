@@ -1,8 +1,8 @@
-import { HomeContainer, HomeContent } from './style'
-import homeImg from '../../assets/home_img.webp'
-import { DefaultButton, InvisibleButton } from '../Buttons/Buttons'
-import branchBgImg from '../../assets/branch_bg.png'
-import { Parallax } from 'react-scroll-parallax'
+import { HomeContainer, HomeContent } from "./style";
+import homeImg from "../../assets/home_img.webp";
+import { DefaultButton, InvisibleButton } from "../Buttons/Buttons";
+import branchBgImg from "../../assets/branch_bg.png";
+import { Parallax } from "react-scroll-parallax";
 
 export function Home() {
   return (
@@ -30,16 +30,23 @@ export function Home() {
             <strong>Justiça</strong>
           </Parallax>
           <img
+            draggable={false}
             width={452}
             height={716}
             className="parallaxImg"
             src={homeImg}
+            draggable={false}
             alt="estatua justiça"
           />
         </div>
       </div>
 
-      <img className="branchBg" src={branchBgImg} alt="ramo fundo" />
+      <img
+        draggable={false}
+        className="branchBg"
+        src={branchBgImg}
+        alt="ramo fundo"
+      />
     </HomeContainer>
-  )
+  );
 }

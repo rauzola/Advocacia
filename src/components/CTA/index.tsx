@@ -1,13 +1,14 @@
-import { Content, CTAContainer } from './style'
-import ctaImg from '../../assets/CTA.png'
-import { DefaultButton } from '../Buttons/Buttons'
-import branchBgImg from '../../assets/branch_bg.png'
+import { Content, CTAContainer } from "./style";
+import ctaImg from "../../assets/CTA.png";
+import { DefaultButton } from "../Buttons/Buttons";
+import branchBgImg from "../../assets/branch_bg.png";
 
 export function CTA() {
   return (
     <CTAContainer>
       <Content>
         <img
+          draggable={false}
           width={496}
           height={680}
           src={ctaImg}
@@ -28,8 +29,13 @@ export function CTA() {
             <DefaultButton>Entrar em contato</DefaultButton>
           </a>
         </div>
-        <img className="branchBg" src={branchBgImg} alt="ramo de fundo" />
+        <img
+          draggable={false}
+          className="branchBg"
+          src={branchBgImg}
+          alt="ramo de fundo"
+        />
       </Content>
     </CTAContainer>
-  )
+  );
 }
