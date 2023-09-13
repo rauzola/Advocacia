@@ -19,9 +19,10 @@ export function SocialProof() {
           <img src={commentImg} alt="comentario" />
         </div>
         <p className="content">
-        1111 teste de Depoimentos - O advogado ...... foi um recurso inestimável quando se tratava
-          de proteger meus direitos no tribunal. Sua atenção aos detalhes e
-          conhecimento das leis são insuperáveis. Eu a recomendaria muito.
+          1111 teste de Depoimentos - O advogado ...... foi um recurso
+          inestimável quando se tratava de proteger meus direitos no tribunal.
+          Sua atenção aos detalhes e conhecimento das leis são insuperáveis. Eu
+          a recomendaria muito.
         </p>
       </SocialProofCard>
     </div>,
@@ -32,9 +33,10 @@ export function SocialProof() {
           <img src={commentImg} alt="comentario" />
         </div>
         <p className="content">
-         2222 teste de Depoimentos - O advogado ....... foi um recurso inestimável quando se tratava
-          de proteger meus direitos no tribunal. Sua atenção aos detalhes e
-          conhecimento das leis são insuperáveis. Eu a recomendaria muito.
+          2222 teste de Depoimentos - O advogado ....... foi um recurso
+          inestimável quando se tratava de proteger meus direitos no tribunal.
+          Sua atenção aos detalhes e conhecimento das leis são insuperáveis. Eu
+          a recomendaria muito.
         </p>
       </SocialProofCard>
     </div>,
@@ -45,9 +47,10 @@ export function SocialProof() {
           <img src={commentImg} alt="comentario" />
         </div>
         <p className="content">
-          3333 teste de Depoimentos - O advogado Antônio Júnior foi um recurso inestimável quando se tratava
-          de proteger meus direitos no tribunal. Sua atenção aos detalhes e
-          conhecimento das leis são insuperáveis. Eu a recomendaria muito.
+          3333 teste de Depoimentos - O advogado ...... foi um recurso
+          inestimável quando se tratava de proteger meus direitos no tribunal.
+          Sua atenção aos detalhes e conhecimento das leis são insuperáveis. Eu
+          a recomendaria muito.
         </p>
       </SocialProofCard>
     </div>,
@@ -58,7 +61,11 @@ export function SocialProof() {
           <img src={commentImg} alt="comentario" />
         </div>
         <p className="content">
-         4444 teste de Depoimentos - Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, suscipit, voluptatem quia expedita consequuntur corrupti nobis libero veniam temporibus deleniti voluptatibus, iste eligendi est beatae esse odio. Dolores, ut temporibus.
+          4444 teste de Depoimentos - Lorem ipsum dolor sit amet consectetur
+          adipisicing elit. Eaque, suscipit, voluptatem quia expedita
+          consequuntur corrupti nobis libero veniam temporibus deleniti
+          voluptatibus, iste eligendi est beatae esse odio. Dolores, ut
+          temporibus.
         </p>
       </SocialProofCard>
     </div>,
@@ -69,8 +76,10 @@ export function SocialProof() {
           <img src={commentImg} alt="comentario" />
         </div>
         <p className="content">
-        5555 teste de Depoimentos - Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, autem. Debitis consectetur impedit eaque, quibusdam, eos sed excepturi quod molestias cupiditate hic natus? Eaque consequuntur hic, maiores aperiam eius iste. 
-
+          5555 teste de Depoimentos - Lorem ipsum dolor sit amet consectetur
+          adipisicing elit. Fugit, autem. Debitis consectetur impedit eaque,
+          quibusdam, eos sed excepturi quod molestias cupiditate hic natus?
+          Eaque consequuntur hic, maiores aperiam eius iste.
         </p>
       </SocialProofCard>
     </div>,
@@ -80,7 +89,7 @@ export function SocialProof() {
     0: { items: 1 },
     568: { items: 2 },
     1024: { items: 2 },
-};
+  };
 
   return (
     <SocialProofContainer id="depoimentos">
@@ -100,17 +109,16 @@ export function SocialProof() {
       </Content>
 
       <CardContainer>
-      <AliceCarousel
-      key="carousel"
-      mouseTracking
-      autoPlay
-      animationDuration={6000}
-      disableButtonsControls
-      items={items}
-      infinite
-      responsive={responsive}
-
-    />
+        <AliceCarousel
+          key="carousel"
+          mouseTracking
+          autoPlay
+          animationDuration={6000}
+          disableButtonsControls
+          items={items}
+          infinite
+          responsive={responsive}
+        />
       </CardContainer>
 
       <img className="branchImg" src={branchBgImg} alt="ramo defundo" />
