@@ -12,7 +12,7 @@ export function Header() {
             <img src={logoSmallImg} alt="logomarca Antonio" />
           </a>
           <a href="#home">
-            <img src={logoExtendsImg} alt="Logomarca Antonio" />
+            {/* <img src={logoExtendsImg} alt="Logomarca Antonio" /> */}
           </a>
         </LogoContainer>
         <nav>
