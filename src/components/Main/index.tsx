@@ -24,7 +24,7 @@ export function Main() {
         <nav>
           <a
             target="_blank"
-            href="https://www.linkedin.com/in/raul_sigoli/"
+            href="https://www.linkedin.com/in/raul-sigoli-137bb4173/"
             rel="noreferrer"
           >
             <img width={40} height={40} src={linkedinImg} alt="linkedin" />
