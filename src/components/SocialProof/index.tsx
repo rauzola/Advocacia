@@ -1,17 +1,19 @@
+import { useMemo } from "react";
+import AliceCarousel from "react-alice-carousel";
+import "react-alice-carousel/lib/alice-carousel.css";
+import commentImg from "../../assets/comment_icon.svg";
+import branchBgImg from "../../assets/social_proof_branch.png";
+import { DefaultButton } from "../Buttons/Buttons";
 import {
   CardContainer,
   Content,
   SocialProofCard,
   SocialProofContainer,
 } from "./style";
-import commentImg from "../../assets/comment_icon.svg";
-import { DefaultButton } from "../Buttons/Buttons";
-import branchBgImg from "../../assets/social_proof_branch.png";
-import AliceCarousel from "react-alice-carousel";
-import "react-alice-carousel/lib/alice-carousel.css";
 
 export function SocialProof() {
-  const items = [
+
+  const items = useMemo(() => [
     <div className="item" data-value="1">
       <SocialProofCard>
         <div className="header">
@@ -83,13 +85,13 @@ export function SocialProof() {
         </p>
       </SocialProofCard>
     </div>,
-  ];
+  ], []);
 
-  const responsive = {
+  const responsive = useMemo(() => ({
     0: { items: 1 },
     568: { items: 2 },
     1024: { items: 2 },
-  };
+  }), []);
 
   return (
     <SocialProofContainer id="depoimentos">
@@ -97,7 +99,7 @@ export function SocialProof() {
         <h1>Depoimentos de nossos clientes</h1>
         <p>
           Muitos clientes estão felizes em trabalhar conosco e estão apreciando
-          nosso trabalho.{" "}
+          nosso trabalho.
         </p>
         <a
           href="http://api.whatsapp.com/send?1=pt_BR&phone=55044991658351"
